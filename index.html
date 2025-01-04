@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Tailwind CSS</title>
+    <link href="src/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Header Start-->
+    <header class="bg-transparent fixed top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#home" class="font-bold text-lg text-primary block py-6">Ariiq Islam Alfajri</a>
+                </div>
+                <div class="flex items-center px-4"> <!--creating the hamburger-->
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+                    <nav id="nav-menu"
+                        class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Home</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">About</a>
+                            </li>
+                            <li class="group">
+                                <a href="#portfolio"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portfolio</a>
+                            </li>
+                            <li class="group">
+                                <a href="#blog"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Blog</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!--Header Stop-->
+
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-36">
+        <div class="container">
+            <div class="flex = flex-wrap">
+                <div class="w_full self-center px-4 lg:w-1/2"> <!--section kiri-->
+                    <h1 class="text-base font-semibold text-primary md:text-xl">Hi everyone 👋, I'm
+                        <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl"> Ariiq Islam Alfajri</span>
+                    </h1>
+                    <h2 class="font-medium text-secondary text-lg mt-1 mb-5 lg:text-2xl"> Data Enthusiast | ex-Db Admin
+                        Intern</h2>
+                    <p class="font-medium text-secondary mb-10 leading-relaxed">Welcome to my portfolio website!</p>
+                    <a href="#" class="text-base font-semibold text-white bg-primary py-3 px-8
+                    rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out">Contact me</a>
+                </div>
+                <div class="w-full self-end px-4 lg:w-1/2"> <!--section kanan-->
+                    <div class="relative mt-10 lg:mt-9 lg:right-0">
+                        <img src="src/img/IMG_5546.png" alt="Ariiq" class="w-full max-w-[400px] mx-auto rounded-lg">
+                        <!--gambar sendiri-->
+                        <span class="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-110">
+                            <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <!--vektor bg-->
+                                <path fill="#2563eb" d="M42.8,-47.3C51.9,-33.7,53.1,-16.9,55.6,
+                                2.4C58,21.8,61.7,43.5,52.6,54.1C43.5,64.6,21.8,63.9,4.7,59.2C-12.5,
+                                54.6,-24.9,46,-36.3,35.4C-47.7,24.9,-58,12.5,-61.2,-3.2C-64.4,-18.9,
+                                -60.5,-37.7,-49.1,-51.3C-37.7,-64.8,-18.9,-73.1,-1,-72.1C16.9,-71.1,
+                                33.7,-60.9,42.8,-47.3Z" transform="translate(100 100) scale(1.1)" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start-->
+    <section id="about" class="pt-36 pb-32">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-10 lg:w-1/2"> <!--about me section-->
+                    <h4 class="font-bold uppercase text-primary text-lg mb-3">About me</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">Final year physics student</h2>
+                    <p class="font-medium text-base text-secondary max-w-wl lg:text-lg">I'm a final year physics student
+                        with highly motivated skill. </p>
+                </div>
+                <div class="w-full px-4 lg:w-1/2"> <!-- connect account section-->
+                    <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Lets connect!</h3>
+                    <p class="font-medium text-base text-secondary mb-6 lg:text-lg">
+                        Here are my account
+                    </p>
+                    <div class="flex items-center">
+                        <!--Linkedin-->
+                        <a href="https://linkedin.com/in/ariiq-alfajri" target="_blank"
+                            class="w-9 h-9 mr-3 rounded-full flex justify-center
+                            items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary group">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                class="fill-current text-black group-hover:text-white" viewBox="0 0 24 24">
+                                <path
+                                    d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z">
+                                </path>
+                            </svg>
+                        </a>
+                        <!--GitHub-->
+                        <a href="https://github.com/ariiqalfajri" target="_blank"
+                            class="w-9 h-9 mr-3 rounded-full flex justify-center
+                            items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary group">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                class="fill-current text-black group-hover:text-white" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z">
+                                </path>
+                            </svg>
+                        </a>
+                        <!--Email-->
+                        <a href="mailto:ariiq.i.alfajri@gmail.com" target="_blank"
+                            class="w-9 h-9 mr-3 rounded-full flex justify-center
+                            items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary group">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                class="fill-current text-black group-hover:text-white" viewBox="0 0 24 24">
+                                <path
+                                    d="m18.73 5.41-1.28 1L12 10.46 6.55 6.37l-1.28-1A2 2 0 0 0 2 7.05v11.59A1.36 1.36 0 0 0 3.36 20h3.19v-7.72L12 16.37l5.45-4.09V20h3.19A1.36 1.36 0 0 0 22 18.64V7.05a2 2 0 0 0-3.27-1.64z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End-->
+
+    <!--Portfolio Section Start-->
+    <section id="portfolio" class="pt-36 pb-16 bg-slate-100">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-lg text-primary mb-2">Portfolio</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-4">Data analytics</h2>
+                    <p class="font-medium text-md text-secondary">These are my projects.</p>
+                    <!--sub header setting line-->
+                </div>
+            </div>
+            <div class="w-full px-4 flex flex-wrap justify-center xl:w-11/12 xl:mx-auto">
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="src/img/portfolio/Screenshot 2025-01-03 000140.png" alt="EDP" width="w-full">
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">End-to-end Data Analytics</h3>
+                    <p class="font-medium text-base text-secondary">By using Jupyter with Python and SQL Server, i'm
+                        doing an end-to-end data analytics project with a real-case datasets. Here i extract the data
+                        from internet, load it to python, doing some cleanings, and transfer it to sql. Then i perform
+                        some data analytics to give some insight.</p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="src/img/portfolio/Screenshot 2025-01-03 000140.png" alt="EDP" width="w-full">
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">End-to-end Data Analytics</h3>
+                    <p class="font-medium text-base text-secondary">By using Jupyter with Python and SQL Server, i'm
+                        doing an end-to-end data analytics project with a real-case datasets. Here i extract the data
+                        from internet, load it to python, doing some cleanings, and transfer it to sql. Then i perform
+                        some data analytics to give some insight.</p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="src/img/portfolio/Screenshot 2025-01-03 000140.png" alt="EDP" width="w-full">
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">End-to-end Data Analytics</h3>
+                    <p class="font-medium text-base text-secondary">By using Jupyter with Python and SQL Server, i'm
+                        doing an end-to-end data analytics project with a real-case datasets. Here i extract the data
+                        from internet, load it to python, doing some cleanings, and transfer it to sql. Then i perform
+                        some data analytics to give some insight.</p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="src/img/portfolio/Screenshot 2025-01-03 000140.png" alt="EDP" width="w-full">
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">End-to-end Data Analytics</h3>
+                    <p class="font-medium text-base text-secondary">By using Jupyter with Python and SQL Server, i'm
+                        doing an end-to-end data analytics project with a real-case datasets. Here i extract the data
+                        from internet, load it to python, doing some cleanings, and transfer it to sql. Then i perform
+                        some data analytics to give some insight.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Portfolio Sectoin End-->
+
+    <!--Blog Section Start-->
+    <section id="blog" class="pt-36 pb-32 bg-slate-100">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-lg text-primary mb-2">Blog</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-3xl">Newest Though</h2>
+                    <p class="font-medium text-md text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Qui dignissimos facere illum ipsam reiciendis consectetur necessitatibus nam est. Beatae,
+                        tenetur!
+                    </p>
+                </div>
+                <div class="flex flex-wrap">
+                    <div class="w-full px-4 lg:w-1/2 xl:w-1/3"> <!--every blog-->
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                            <img src="src/img/blog/images-1.png" alt="Import Wizard" class="w-full">
+                            <div class="py-8 px-6">
+                                <h3 class="">
+                                    <a href="#"
+                                        class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Importing
+                                        .csv file SQL Server</a>
+                                </h3>
+                                <p class="font-medium text-base text-secondary mb-6">Lorem, ipsum dolor sit amet
+                                    consectetur adipisicing elit. Architecto dignissimos rem repudiandae autem iste
+                                    exercitationem?</p>
+                                <a href="#"
+                                    class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Read
+                                    more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full px-4 lg:w-1/2 xl:w-1/3"> <!--every blog-->
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                            <img src="src/img/blog/images-1.png" alt="Import Wizard" class="w-full">
+                            <div class="py-8 px-6">
+                                <h3 class="">
+                                    <a href="#"
+                                        class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Importing
+                                        .csv file SQL Server</a>
+                                </h3>
+                                <p class="font-medium text-base text-secondary mb-6">Lorem, ipsum dolor sit amet
+                                    consectetur adipisicing elit. Architecto dignissimos rem repudiandae autem iste
+                                    exercitationem?</p>
+                                <a href="#"
+                                    class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Read
+                                    more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full px-4 lg:w-1/2 xl:w-1/3"> <!--every blog-->
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                            <img src="src/img/blog/images-1.png" alt="Import Wizard" class="w-full">
+                            <div class="py-8 px-6">
+                                <h3 class="">
+                                    <a href="#"
+                                        class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Importing
+                                        .csv file SQL Server</a>
+                                </h3>
+                                <p class="font-medium text-base text-secondary mb-6">Lorem, ipsum dolor sit amet
+                                    consectetur adipisicing elit. Architecto dignissimos rem repudiandae autem iste
+                                    exercitationem?</p>
+                                <a href="#"
+                                    class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Read
+                                    more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Blog Section End-->
+
+    <!--Contact Section Start-->
+    <section id="contact" class="pt-36 pb-32">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-lg text-primary mb-2">Contact</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-3xl">Have a talk</h2>
+                    <p class="font-medium text-md text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Qui dignissimos facere illum ipsam reiciendis consectetur necessitatibus nam est. Beatae,
+                        tenetur!</p>
+                </div>
+            </div>
+            <form action="">
+                <div class="w-full lg:w-2/3 lg:mx-auto">
+                    <div class="w-full px-4 mb-8">
+                        <label for="name" class="text-base font-bold text-primary">Name</label>
+                        <input type="text" id="name"
+                            class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
+                    </div>
+                    <div class="w-full px-4 mb-8">
+                        <label for="email" class="text-base font-bold text-primary">Email</label>
+                        <input type="email" id="email"
+                            class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
+                    </div>
+                    <div class="w-full px-4 mb-8">
+                        <label for="message" class="text-base font-bold text-primary">Message</label>
+                        <textarea type="email" id="email"
+                            class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
+                    </div>
+                    <div class="w-full px-4">
+                        <button
+                            class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Send</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!--Contach Section End-->
+
+    <!--Footer Section Start-->
+    <footer class="bg-dark pt-24 pb-12">
+        <div class="container">
+            <div class="flex flex-wrap"> <!--Footer-->
+                <div class="w-full px-4 mb-12 md:w-1/3 text-slate-300 font-medium">
+                    <h2 class="font-bold text-4xl text-white">That is all about me</h2>
+                    <h3 class="font-bold text-2xl mb-2">Lets discuss!</h3>
+                    <p>ariiq.i.alfajri@gmail.com</p>
+                    <p>Bogor, Indonesia</p>
+                </div>
+                <div class="w-full px-4 mb-12 md:w-1/3">
+                    <h3 class="font-semibold text-xl text-white mb-5">Writing Category</h3>
+                    <ul class="text-slate-300">
+                        <li>
+                            <a href="#" class="inline-block text-base hover:text-primary mb-3">
+                                Importing file
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block text-base hover:text-primary mb-3">
+                                Connecting python to sql
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block text-base hover:text-primary mb-3">
+                                Coming soon
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full px-4 mb-12 md:w-1/3">
+                    <h3 class="font-semibold text-xl text-white mb-5">Links</h3>
+                    <ul class="text-slate-300">
+                        <li>
+                            <a href="#home" class="inline-block text-base hover:text-primary mb-3">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about" class="inline-block text-base hover:text-primary mb-3">
+                                About me
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="inline-block text-base hover:text-primary mb-3">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#blog" class="inline-block text-base hover:text-primary mb-3">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="inline-block text-base hover:text-primary mb-3">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full pt-10 border-t border-slate-700"> <!--bottom-->
+                <div class="flex items-center justify-center mb-5"> <!--footer logo links-->
+                    <!-- LinkedIn -->
+                    <a href="https://linkedin.com/in/ariiq-alfajri" target="_blank"
+                        class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary group">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            class="fill-current text-slate-300 group-hover:filter-invert" viewBox="0 0 24 24">
+                            <path
+                                d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z">
+                            </path>
+                        </svg>
+                    </a>
+                    <!-- GitHub -->
+                    <a href="https://github.com/ariiqalfajri" target="_blank"
+                        class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary group">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            class="fill-current text-slate-300 group-hover:filter-invert" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z">
+                            </path>
+                        </svg>
+                    </a>
+                    <!-- Email -->
+                    <a href="mailto:ariiq.i.alfajri@gmail.com" target="_blank"
+                        class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary group">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            class="fill-current text-slate-300 group-hover:filter-invert" viewBox="0 0 24 24">
+                            <path
+                                d="m18.73 5.41-1.28 1L12 10.46 6.55 6.37l-1.28-1A2 2 0 0 0 2 7.05v11.59A1.36 1.36 0 0 0 3.36 20h3.19v-7.72L12 16.37l5.45-4.09V20h3.19A1.36 1.36 0 0 0 22 18.64V7.05a2 2 0 0 0-3.27-1.64z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+                <p class="font-medium text-xs text-slate-500 text-center"> <!--Copyright-->
+                    Made by<a href="https://instagram.com/ariiq.alfajri" target="_blank" class="font-bold text-primary">
+                        Ariiq Islam Alfajri</a>
+                    using <a href="https://tailwindcss.com" target="_blank" class="font-bold text-sky-500">Tailwind
+                        CSS</a></p>
+            </div>
+        </div>
+    </footer>
+    <!--Footer Section End-->
+
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>
