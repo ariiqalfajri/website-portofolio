@@ -21,7 +21,7 @@
         <div class="container">
             <div class="flex items-center justify-between relative">
                 <div class="px-4">
-                    <a href="#home" class="font-bold text-lg text-primary block py-6">Ariiq Islam Alfajri</a>
+                    <a href="#home" class="font-bold text-lg text-primary block py-6">Ariiq's Portfolio Website</a>
                 </div>
                 <div class="flex items-center px-4"> <!--creating the hamburger-->
                     <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
@@ -46,6 +46,10 @@
                             </li>
                             <li class="group">
                                 <a href="#blog"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Blog</a>
+                            </li>
+                            <li class="group">
+                                <a href="#certificate"
                                     class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Blog</a>
                             </li>
                         </ul>
@@ -101,13 +105,15 @@
                 <div class="w-full px-4 mb-10 lg:w-1/2"> <!--about me section-->
                     <h4 class="font-bold uppercase text-primary text-lg mb-3">About me</h4>
                     <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">I am Ariiq,</h2>
-                    <p class="font-medium text-base text-secondary max-w-wl lg:text-lg mb-3">a passionate data enthusiast
+                    <p class="font-medium text-base text-secondary max-w-wl lg:text-lg mb-3">a passionate data
+                        enthusiast
                         with 3+ years of experience in learning data and leadership roles. Recently completed the
                         Bangkit Machine Learning cohort, achieving 20+ courses in just 3 months. Eager to apply my
                         skills in data-driven roles and continue growing in this dynamic and impactful field.</p>
                     <a href="https://drive.google.com/file/d/1PCavB8_Cdf-zfakxDMHLtVury5ZoPgjt/view?usp=sharing"
                         target="_blank"
-                        class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Here's my resume</a>
+                        class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Here's
+                        my resume</a>
                 </div>
                 <div class="w-full px-4 lg:w-1/2"> <!-- connect account section-->
                     <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Lets connect!</h3>
@@ -206,7 +212,7 @@
                     <p class="font-medium text-xl text-secondary">My recent writings</p>
                 </div>
                 <div class="flex flex-wrap justify-center gap-4">
-                    <div id="blog1" class="w-full px-4 lg:w-1/2 xl:w-1/3"> <!--Blog 1-->
+                    <div id="blog1" class="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-1/3"> <!--Blog 1-->
                         <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
                             <img src="src/img/blog/Group 2421.png" alt="Import Wizard" class="w-full h-48 object-cover">
                             <div class="py-8 px-6">
@@ -219,7 +225,7 @@
                                 <p class="font-medium text-base text-secondary mb-6">In this blog, I walk through the
                                     process of importing a CSV file into SQL Server, providing step-by-step instructions
                                     and useful tips. The guide covers easy method for loading data efficiently, ensuring
-                                    a smooth integration between CSV files and SQL Server databases.</p>
+                                    a smooth integration between CSV files and SQL Server databases that useful for data analytics purpose.</p>
                                 <a href="https://medium.com/@ariiq.i.alfajri/importing-csv-file-to-sql-s-5919fd53f9e0"
                                     target="_blank"
                                     class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Read
@@ -227,7 +233,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="blog2" class="w-full px-4 lg:w-1/2 xl:w-1/3"> <!--Blog 2-->
+                    <div id="blog2" class="md:w-1/2 w-full px-4 lg:w-1/2 xl:w-1/3"> <!--Blog 2-->
                         <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
                             <img src="src/img/blog/Frame 122.png" alt="Import Wizard" class="w-full h-48 object-cover">
                             <div class="py-8 px-6">
@@ -237,7 +243,7 @@
                                         class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Connecting
                                         Python with SQL</a>
                                 </h3>
-                                <p class="font-medium text-base text-secondary mb-6">This blog explains how to connect
+                                <p class="font-medium text-base text-secondary mb-6 line-clamp-3">This blog explains how to connect
                                     Python to SQL Server, enabling seamless interaction with databases for data
                                     manipulation and analysis. It includes step-by-step instructions on setting up the
                                     connection using popular libraries, along with tips for executing SQL queries
@@ -249,7 +255,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="blog3" class="w-full px-4 lg:w-1/2 xl:w-1/3"> <!--Blog 3-->
+                    <div id="blog3" class="md:w-1/2 w-full px-4 lg:w-1/2 xl:w-1/3"> <!--Blog 3-->
                         <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
                             <img src="src/img/blog/Frame 123.png" alt="Import Wizard" class="w-full h-48 object-cover">
                             <div class="py-8 px-6">
@@ -260,7 +266,7 @@
                                         a Portfolio Website Using Tailwind and CSS
                                     </a>
                                 </h3>
-                                <p class="font-medium text-base text-secondary mb-6">Likely this website, this blog
+                                <p class="font-medium text-base text-secondary mb-6 line-clamp-3">Likely this website, this blog
                                     walks you through the process of creating a responsive portfolio website using
                                     Tailwind CSS. I cover everything from setting up the project to customizing layouts
                                     and design elements, providing practical tips and code snippets to help you build a
@@ -277,6 +283,95 @@
         </div>
     </section>
     <!--Blog Section End-->
+
+    <!--Certificate Section Start-->
+    <section id="certificate" class="pt-36 pb-32">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-lg text-primary mb-2">Certificate</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-3xl">Skill Badges</h2>
+                    <p class="font-medium text-md text-secondary">Validating Expertise with Certified Accomplishments</p>
+                </div>
+            </div> <!--header sub section end-->
+            <div class="w-full flex flex-wrap lg:mx-auto">
+                <div id="blog1" class="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-1/3"> <!--Certif 1-->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                        <img src="src/img/certificate/1. Coursera JDS4H01R5MOZ.jpg" alt="Certif1" class="w-full h-24 object-cover">
+                        <div class="py-8 px-6">
+                            <h3 class="block mb-1 font-semibold text-xl text-dark truncate">Generative AI for Everyone</h3>
+                            <p class="font-medium text-base text-secondary mb-3">DeepLearning.AI</p>
+                            <a href="https://coursera.org/verify/JDS4H01R5MOZ"
+                                target="_blank"
+                                class="font-medium text-sm text-primary">Credential ID: JDS4H01R5MOZ</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="blog1" class="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-1/3"> <!--Certif 2-->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                        <img src="src/img/certificate/2. Coursera EBBFKTEEKXNS.jpg" alt="Certif2" class="w-full h-24 object-cover">
+                        <div class="py-8 px-6">
+                            <h3 class="block mb-1 font-semibold text-xl text-dark truncate">Advanced Computer Vision with TensorFlow</h3>
+                            <p class="font-medium text-base text-secondary mb-3">DeepLearning.AI</p>
+                            <a href="https://coursera.org/verify/EBBFKTEEKXNS"
+                                target="_blank"
+                                class="font-medium text-sm text-primary">Credential ID: EBBFKTEEKXNS</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="blog1" class="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-1/3"> <!--Certif 3-->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                        <img src="src/img/certificate/3. Coursera TAAG3P8SJYKS.jpg" alt="Certif3" class="w-full h-24 object-cover">
+                        <div class="py-8 px-6">
+                            <h3 class="block mb-1 font-semibold text-xl text-dark truncate">Tensorflow Developer</h3>
+                            <p class="font-medium text-base text-secondary mb-3">DeepLearning.AI</p>
+                            <a href="https://coursera.org/verify/specialization/TAAG3P8SJYKS"
+                                target="_blank"
+                                class="font-medium text-sm text-primary">Credential ID: TAAG3P8SJYKS</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="blog1" class="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-1/3"> <!--Certif 4-->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                        <img src="src/img/certificate/4. Coursera E4VNJE7QKXJ1.jpg" alt="Certif4" class="w-full h-24 object-cover">
+                        <div class="py-8 px-6">
+                            <h3 class="block mb-1 font-semibold text-xl text-dark truncate">TensorFlow: Data and Deployment</h3>
+                            <p class="font-medium text-base text-secondary mb-3">DeepLearning.AI</p>
+                            <a href="https://coursera.org/verify/specialization/E4VNJE7QKXJ1"
+                                target="_blank"
+                                class="font-medium text-sm text-primary">Credential ID: E4VNJE7QKXJ1</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="blog1" class="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-1/3"> <!--Certif 5-->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                        <img src="src/img/certificate/5. Coursera ICZT91PGKMIU.jpg" alt="Certif5" class="w-full h-24 object-cover">
+                        <div class="py-8 px-6">
+                            <h3 class="block mb-1 font-semibold text-xl text-dark truncate">Custom Models, Layers, and Loss Functions with
+                                TensorFlow</h3>
+                            <p class="font-medium text-base text-secondary mb-3">DeepLearning.AI</p>
+                            <a href="https://coursera.org/verify/ICZT91PGKMIU"
+                                target="_blank"
+                                class="font-medium text-sm text-primary">Credential ID: ICZT91PGKMIU</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="blog1" class="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-1/3"> <!--Certif 6-->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                        <img src="src/img/certificate/6. Coursera 8RAQ1B3Z078A.jpg" alt="Certif6" class="w-full h-24 object-cover">
+                        <div class="py-8 px-6">
+                            <h3 class="block mb-1 font-semibold text-xl text-dark truncate">Machine Learning</h3>
+                            <p class="font-medium text-base text-secondary mb-3">DeepLearning.AI</p>
+                            <a href="https://coursera.org/verify/specialization/8RAQ1B3Z078A"
+                                target="_blank"
+                                class="font-medium text-sm text-primary">Credential ID: 8RAQ1B3Z078A</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Certificate Section End-->
 
     <!--Footer Section Start-->
     <footer class="bg-dark pt-24 pb-12">
@@ -329,6 +424,11 @@
                         <li>
                             <a href="#blog" class="inline-block text-base hover:text-primary mb-3">
                                 Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#certificate" class="inline-block text-base hover:text-primary mb-3">
+                                Certificate
                             </a>
                         </li>
                     </ul>
