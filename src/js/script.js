@@ -57,6 +57,15 @@ function submitForm(e) {
 
     // Save message
     saveMessage(name, email, message);
+
+    // Show alert by removing the 'hidden' class
+    const alertBox = document.getElementById('alert');
+    alertBox.classList.remove('hidden');
+
+    // Hide alert after 3 seconds
+    setTimeout(function () {
+        alertBox.classList.add('hidden');
+    }, 3000);
 }
 
 // Function to get form values
@@ -66,7 +75,7 @@ function getInputVal(id) {
 
 // Save message to Firebase
 function saveMessage(name, email, message) {
-    
+
     // Use push() to add a new message
     const newMessageRef = push(messagesRef);
 

@@ -27,3 +27,9 @@ body {
 .hamburger-active > span:nth-child(3) {
     @apply -rotate-45;
 }
+
+.alert{
+    text-align: center;
+    padding: 10px;
+    background: #79c879;79;
+}
