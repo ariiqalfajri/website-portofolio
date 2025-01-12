@@ -2,12 +2,16 @@
 window.onscroll = function () {
     const header = document.querySelector('header');
     const fixedNav = header.offsetTop;
+    const toTop = document.querySelector('#to-top');
 
     if (window.scrollY > fixedNav) {
         header.classList.add('navbar-fixed');
-
+        toTop.classList.remove('hidden');
+        toTop.classList.add('flex');
     } else {
         header.classList.remove('navbar-fixed');
+        toTop.classList.remove('flex');
+        toTop.classList.add('hidden');
     }
 }
 
@@ -22,6 +26,15 @@ hamburger.addEventListener('click', function () {
     navMenu.classList.toggle('hidden');
 });
 
+// Click outside Hamburger
+window.addEventListener('click', function (e) {
+    if (e.target != hamburger && e.target != navMenu) {
+        hamburger.classList.remove('hamburger-active');
+        navMenu.classList.add('hidden');
+    }
+});
+
+// Firebase customization
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
 import { getDatabase, ref, push, set } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-database.js";
 
