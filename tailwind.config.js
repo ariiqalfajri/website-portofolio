@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['index.html'],
+  content: [
+    './*.html',
+    './pages/**/*.html'
+  ],
   theme: {
     container: {
       center: true,
@@ -9,7 +12,7 @@ module.exports = {
     extend: {
       colors: {
         primary: '#2563eb',
-        secondary:'#64748b',
+        secondary: '#64748b',
         dark: '#0f172a', //hex warna
       },
       screens: {
