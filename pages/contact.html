@@ -66,59 +66,45 @@
     </header>
     <!--Header Stop-->
 
-    <!--Portfolio Section Start-->
-    <section id="portfolio" class="pt-36 pb-16 bg-slate-100">
+    <!--Contact Section Start-->
+    <section id="contact" class="pt-36 pb-32">
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
-                    <h4 class="font-bold text-4xl text-primary mb-2">Portfolio</h4>
-                    <p class="font-medium text-xl text-secondary">Samples of my work</p>
+                    <h4 class="font-semibold text-lg text-primary mb-2">Contact</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-3xl">Get in Touch with Me</h2>
+                    <p class="font-medium text-md text-secondary">Open to opportunities, collaborations, and exciting
+                        challenges. Let's talk!</p>
                 </div>
             </div>
-            <!--sub header setting line-->
-            <div class="w-full px-4 flex flex-wrap justify-center xl:w-11/12 xl:mx-auto">
-                <div class="mb-6 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden"> <!--Portfolio 1-->
-                        <img src="../src/img/portfolio/Frame 124.png" alt="foto mcc" width="w-full">
+            <form id="ContactForm">
+                <div class="w-full lg:w-2/3 lg:mx-auto">
+                    <div class="w-full px-4 mb-8"> <!--name-->
+                        <label for="name" class="text-base font-bold text-primary">Name</label>
+                        <input type="text" id="name" name="name" required
+                            class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
                     </div>
-                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Multiple Currency Classifier App</h3>
-                    <p class="font-medium text-base text-secondary">This project focuses on developing a multiple
-                        currency classifier app. It consists of two models, a single currency classifier using
-                        TensorFlow and a multi-currency classifier based on the YOLO model for detecting and classifying
-                        various currency denominations in real-time. Both models achieved an accuracy of over 80%,
-                        making the app effective in automating the process of identifying and categorizing currencies
-                        from images.</p>
-                    <a href="https://github.com/Currency-Clasification-Bangkit-2024/MCC-ML" target="_blank"
-                        class="block mb-10 font-medium text-base text-primary truncate">Full project here</a>
-                </div>
-                <div class="mb-6 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden"> <!--Portfolio 2-->
-                        <img src="../src/img/portfolio/Screenshot 2025-01-11 114701.png" alt="foto eda" width="w-full">
+                    <div class="w-full px-4 mb-8"> <!--email-->
+                        <label for="email" class="text-base font-bold text-primary">Email</label>
+                        <input type="email" id="email" name="email" required
+                            class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
                     </div>
-                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Coffee Sales Dashboard in Excel</h3>
-                    <p class="font-medium text-base text-secondary">This project demonstrates how to use Excel to
-                        perform
-                        calculations with formulas and visualize the results in an interactive dashboard.
-                        The dashboard provides insights and allows users to interact with data in an intuitive way.</p>
-                    <a href="https://github.com/ariiqalfajri/CoffeeSalesDashboard-Excel" target="_blank"
-                        class="block mb-10 font-medium text-base text-primary truncate">Full project here</a>
-                </div>
-                <div class="mb-6 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden"> <!--Portfolio 3-->
-                        <img src="../src/img/portfolio/da1g.png" alt="foto eda" width="w-full">
+                    <div class="w-full px-4 mb-8"> <!--message-->
+                        <label for="message" class="text-base font-bold text-primary">Message</label>
+                        <textarea id="message" name="message" required rows="5"
+                            class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
                     </div>
-                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">End-to-end Data Analytics</h3>
-                    <p class="font-medium text-base text-secondary">In this end-to-end data analytics project, I use
-                        Jupyter, Python, and SQL Server to work with real-world datasets. The process begins by
-                        extracting data from the internet, loading it into Python for cleaning, and then transferring it
-                        to SQL Server. I perform data analysis to generate valuable insights from the data.</p>
-                    <a href="https://github.com/ariiqalfajri/EndtoEndDataAnalysisPythonSql" target="_blank"
-                        class="block mb-10 font-medium text-base text-primary truncate">Full project here</a>
+                    <div class="w-full px-4"> <!--hover send setting-->
+                        <button
+                            class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500"
+                            type="submit">Send</button>
+                    </div>
                 </div>
-            </div>
+            </form>
+            <div id="alert" class="text-center mt-5 hidden">Sent!</div>
         </div>
     </section>
-    <!--Portfolio Sectoin End-->
+    <!--Contact Section End-->
 
     <!--Footer Section Start-->
     <footer class="bg-dark pt-24 pb-12">
