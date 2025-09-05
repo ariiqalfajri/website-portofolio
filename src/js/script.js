@@ -74,9 +74,9 @@ document.getElementById("ContactForm").addEventListener("submit", async (e) => {
     });
 
     if (res.ok) {
-      alert("Pesan berhasil dikirim!");
+      alert("Message sent!");
     } else {
-      alert("Gagal mengirim pesan ke email.");
+      alert("Failed to send message.");
     }
   } catch (err) {
     console.error(err);
