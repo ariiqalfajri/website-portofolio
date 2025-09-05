@@ -1,3 +1,4 @@
+// src/js/script.js
 // Navbar fixed
 window.onscroll = function () {
   const header = document.querySelector("header");
@@ -15,7 +16,7 @@ window.onscroll = function () {
   }
 };
 
-// Hamburger
+// Hamburger navbar
 const hamburger = document.querySelector("#hamburger");
 const navMenu = document.querySelector("#nav-menu");
 
@@ -82,3 +83,4 @@ document.getElementById("ContactForm").addEventListener("submit", async (e) => {
     alert("Terjadi error.");
   }
 });
+
