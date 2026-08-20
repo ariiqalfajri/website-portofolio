@@ -142,7 +142,7 @@ body {
 /* ---- Eyebrow labels ---------------------------------------------------- */
 
 .eyebrow {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Manrope', sans-serif;
     font-weight: 600;
     font-size: 0.78rem;
     letter-spacing: 0.08em;
@@ -316,7 +316,7 @@ body {
 /* ---- Misc ---------------------------------------------------------------- */
 
 .tag {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-weight: 600;
     font-size: 0.68rem;
     letter-spacing: 0.04em;
