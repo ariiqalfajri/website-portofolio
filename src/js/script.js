@@ -23,7 +23,7 @@ if (header) {
 
 // Back-to-top button: fixed to the viewport, always scrolls to the top of
 // the CURRENT page rather than relying on a per-page anchor id (the old
-// version pointed at "#home" / "#contact", which broke on pages that had
+// version pointed at "#Beranda" / "#contact", which broke on pages that had
 // no such section).
 const toTop = document.querySelector('#to-top');
 if (toTop) {
